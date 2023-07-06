@@ -1,0 +1,92 @@
+✍ AJAX
+
+💎 AJAX stands for Asynchronous Javascript and XML (JSON).
+💎 AJAX will only work under live server environment.
+💎 Because AJAX responds to the response send by server itself.
+💎 This server can be like live server.
+💎 XAMPP, Laragon server or CLI server.
+💎 AJAX is useful if we want to perform any live change without refresh within the web page then it's useful.
+
+✍ Syntax
+
+💎 Using http request object using JavaScript. (Pro)
+💎 Using jQuery with AJAX.
+💎 Fetch API.
+
+✍ Getting started with AJAX
+
+💎 We can run AJAX request only after when each element of HTML is generated.
+💎 Because, if we target any id or class and that element is not generate due to internet problem in that scenario we will get null.
+
+✍ jQuery Syntax
+
+$(document).ready(function(){
+
+});
+
+$("selector").method(function(){
+
+});
+
+✍ Example 
+
+$(document).ready(function(){
+    $("#btn").click(function(){
+        $("#para").html("Hello");
+        $("#para").text("Hii");
+    })
+});
+
+
+.innerHTML => .html() get put => .html("Hello")
+.innerText => .text() get .text() => .text("Hello")
+.src => .attr('src') get .attr('src', '1.png')
+.value => .val() get .val("Hello")
+.title => .attr('title') get .attr('title', 'Home')
+
+
+✍ Events
+
+onclick => .click()
+onkeyup => .keyup()
+onkeydown => .keydown()
+onkeypress => .keypress()
+onchange => .change()
+onmouseover => .mouseover()
+onmouseleave => .mouseleave()
+onchange => .change()
+ondblclick => .dblclick()
+oncontextmenu => .contextmenu()
+onsubmit => .submit()
+
+
+✍ AJAX Syntax
+
+$.ajax({
+    url : "http://localhost:7000/getEmp.php",
+    type : "GET | POST",
+    data : {key : value},
+    dataType : "json | jsonp | formdata | datastring",
+    success : function(response){
+
+    },
+    beforeSend : function(){
+
+    },
+    error : function(){
+
+    },
+    complete : function(){
+
+    },
+    cache : true | false,
+    async : true | false,
+
+});
+
+
+✍ How to verify AJAX request is running out or not ?
+
+Goto Console Menu ---> Network tab
+Select xhr/Fetch see the response using preview response. 
+

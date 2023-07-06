@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>forEach</title>
+</head>
+
+<body>
+    <script>
+        const num = [1, 2, 3, 4, 5, 6];
+
+        num.forEach((item, index, arr) => {
+            console.log('a[' + index + ']=' + item);
+        });
+
+
+
+        // second method to print array using forEach function 
+
+        const num1 = [10, 12, 30, 40, 15, 26];
+        num1.forEach(conI);
+
+        function conI(item, index, arr) {
+            console.log('a[' + index + ']=' + item);
+        }
+
+
+        // other way of forEach  to sum of array method
+
+        const numb = [10, 12, 30, 40, 15, 26];
+        let sum = 0;
+        numb.forEach(item => {
+            sum += item;
+        });
+        console.log(sum);
+
+        //  other method 
+
+        const lette = ['a', 'b', 'a', 'b', 'c', 'c', 'c', 'd', 'e', 'f', 'r', 'r', 'r', 'a', 'b'];
+        let count = {};
+        lette.forEach(item => {
+            if (count[item]) {
+                count[item]++;
+            } else {
+                count[item] = 1;
+            }
+        });
+        console.log(count);
+
+        //  other method 
+
+        var a = ["abhi", "aman", "amit", "karn",];
+
+        a.forEach(function (int) {
+
+            document.write(int + '<br>');
+
+            document.write('<br>');
+            console.log(int);
+        });
+
+            //  other method 
+
+
+        var a = ["abhi", "aman", "amit", "karn",];
+
+        a.forEach(function (value, index) {
+
+            document.write(index + ' :- ' + value + '</br>');
+            console.log(index, value);
+
+        });
+  
+
+        //  other method 
+
+        var a = ["abhi", "aman", "amit", "karn",];
+
+        a.forEach(loop);
+        function loop(value,index) {
+
+            document.write(index + ' :- ' + value + '</br>');
+            console.log(index, value);
+
+        };
+
+    </script>
+
+</body>
+
+</html>

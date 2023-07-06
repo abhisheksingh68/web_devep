@@ -1,0 +1,1525 @@
+BASIC CONCEPT OF PROGRAMMING :
+
+How to create folder dynamically via date using cmd?
+Concept 1 : A folder name can't contain, illegal character like \, /, :, *, "", ?, |, <>
+
+If while running the command, mkdir %date% if you get an error, incorrect syntax error.
+Make sure you date format does not contain illegal character \, /, ?, *, "", |, :, <>.\
+
+Basic Story :
+PHP is a our technology, and php is a server side language.
+
+Why php is not executed on browser?
+https://www.facebook.com/
+file:///c:/Users/Abhay%20Singh/Desktop/App-2021/PHP/home.html
+
+1). According to client server model,
+2). Anything which is loaded by client (browser) will be called as resourse.
+
+https://www.facebook.com/profile-picture.png (Resource)
+
+Common terms used in Web Technology :
+1). Human (End User)
+2). God (Server)
+3). Prayer (Request)
+4). Blessings (Response)
+
+How end user makes a request?
+Ans : URL (Uniform Resource Locater)
+
+End-user will use browser as a interface/platform to make a request by using URL.
+
+How to see request and response?
+Inspect your browser,
+Go to the response tab.
+
+Some Important Status Code :
+100 continue
+102 processing
+200 ok
+202 accepted
+204 no content
+205 reset content
+300 multiple choice
+302 found
+306 unused
+400 bad request
+402 payment request
+403 forbidden
+404 not found
+405 method not allowed 
+406 not acceptable
+408 request timeout
+423 locked
+425 too early
+429 too many requests
+500 internal server request
+503 service unavailable
+507 insufficient storage
+
+How many types of request are there?
+1). Synchronous Request
+2). Asynchronous Request
+
+1). Synchronous Request :
+A request in which one event depends on other request to happen such type of request is called synchronous request. These request are blocking in nature.
+Example :
+JS --> window.alert()
+PHP --> Form submission
+
+2). Asynchronous Request :
+A request in which one event doesn't depends on other request to happen such type of request is called asynchronous request. These request are non-blocking in nature.
+Example :
+1). Node.js --> window.alert()
+R1 --> Waiting
+R2 --> Processing --> Succeed
+R3 --> Waiting
+R4 --> Processing --> Succeed
+
+2). PHP
+R1 --> Waiting --> Succeed
+R2 --> Waiting --> Processing --> Succeed
+R3 --> Waiting --> Processing --> Succeed
+R4 --> Waiting --> Processing
+
+Getting started with Laragon :
+1). While opening laragon screen you will called as laragon control panel.
+
+Menu : All the inportants,
+Settings, logs, errors, initialization, configuration related to apache, MySQL, php, will be listed here.
+
+Important Files :
+.ini - initialisation file
+        It will contain all the important services, assets, resources, permissions, utilities required by any program during startup.
+Examples : 
+php.ini
+laragon.ini
+mysql.ini
+etc.
+
+.log - error file
+         It will contains all the run-time errors and exceptions occured during execution of the program.
+It stores the information with alert status.
+1). Success
+2). Info
+3). Warning
+4). Danger (Critical)
+
+.cnf or .conf - configuration file
+         It contains the configuration which are required during execution of the program at runtime execution.
+
+2). www : This menu will show all the projects you will create inside C:/laragon/www.
+
+1). Server Document Root : It contains the system path C:/laragon/www
+
+Document root of wamp : C:/wamp/www
+Document root of xampp : C:/xampp/htdocs
+
+2). Explore Menu : It is used to open the existing projects in explorer window.
+
+3). Share : It is used to share the resources with your team mates connected to network.
+
+4). Project Launcher : It will launch every project in URL.
+
+3). Quick App : In PHP, every project is know as an app.
+These app can be classified [community-name] App
+for example : 
+1). wordpress community
+     wordpress app
+2). laravel community
+    laravel app
+3). drupal community
+    drupal app
+4). codeIgnitor community
+     codeIgnitor App or CI App
+
+Using quick app we can automatically configure and install the application.
+Make sure you have internet connection.
+
+https://github.com/awnishmmg/Zwavexampp-list-plugin/blob/master/Xampp-Directory-Listing.zip?raw=true
+
+What is index.php file?
+index.php file is the by default file of apache which will be directly loaded in the url.
+
+Which server you are using?
+Apache Server
+
+Apache server is installed in which server?
+Laragon Server
+
+What is my current file name?
+p1.php
+
+Where this file is located?
+inside c:/laragon/www inside laragon server
+
+Where index.php file is located?
+inside c:/laragon/www
+		  | index.php
+
+From where you can access this index.php?
+From client
+
+How to we can make a request?
+URL (Uniform Resource Locator)
+URI (Uniform Resource Identifier)
+
+URL has following parts :
+URL is a kind of web address to some resource located at any server.
+URL can be two types :
+1). Protocol Based
+2). Non-Protocol Based (Uses IP Address)
+
+URL Syntax :
+[protocol-name]:<sub-domain>/<domain>/<host>:<port>/<resource-url>
+
+Difference b/w HTTP and HTTPS :
+
+		HTTP		HTTPS
+URL		http://		https://
+Security		Unsecure		Enhanced Security
+Port		PORT 80		PORT 443
+OSI Layer		Application Layer	Transport Layer
+TLS Certificate	No		Yes
+Domain Validation	Not required	Domain validation[+legal validation]
+Encryption	No		Yes
+
+TLS : Transport Layer Security
+OSI : Open System Interconnection
+
+What Is the OSI Model
+The Open Systems Interconnection (OSI) model describes seven layers that computer systems use to communicate over a network. It was the first standard model for network communications, adopted by all major computer and telecommunication companies in the early 1980s
+
+The modern Internet is not based on OSI, but on the simpler TCP/IP model. However, the OSI 7-layer model is still widely used, as it helps visualize and communicate how networks operate, and helps isolate and troubleshoot networking problems.
+
+OSI was introduced in 1983 by representatives of the major computer and telecom companies, and was adopted by ISO as an international standard in 1984.
+
+OSI Model Explained: The OSI 7 Layers
+7). Application Layer
+The application layer is used by end-user software such as web browsers and email clients. It provides protocols that allow software to send and receive information and present meaningful data to users. A few examples of application layer protocols are the Hypertext Transfer Protocol (HTTP), File Transfer Protocol (FTP), Post Office Protocol (POP), Simple Mail Transfer Protocol (SMTP), and Domain Name System (DNS).
+
+6). Presentation Layer
+The presentation layer prepares data for the application layer. It defines how two devices should encode, encrypt, and compress data so it is received correctly on the other end. The presentation layer takes any data transmitted by the application layer and prepares it for transmission over the session layer.
+
+5). Session Layer
+The session layer creates communication channels, called sessions, between devices. It is responsible for opening sessions, ensuring they remain open and functional while data is being transferred, and closing them when communication ends. The session layer can also set checkpoints during a data transfer—if the session is interrupted, devices can resume data transfer from the last checkpoint.
+
+4). Transport Layer
+The transport layer takes data transferred in the session layer and breaks it into “segments” on the transmitting end. It is responsible for reassembling the segments on the receiving end, turning it back into data that can be used by the session layer. The transport layer carries out flow control, sending data at a rate that matches the connection speed of the receiving device, and error control, checking if data was received incorrectly and if not, requesting it again.
+
+3). Network Layer
+The network layer has two main functions. One is breaking up segments into network packets, and reassembling the packets on the receiving end. The other is routing packets by discovering the best path across a physical network. The network layer uses network addresses (typically Internet Protocol addresses) to route packets to a destination node.
+
+2). Data Link Layer
+The data link layer establishes and terminates a connection between two physically-connected nodes on a network. It breaks up packets into frames and sends them from source to destination. This layer is composed of two parts—Logical Link Control (LLC), which identifies network protocols, performs error checking and synchronizes frames, and Media Access Control (MAC) which uses MAC addresses to connect devices and define permissions to transmit and receive data.
+
+1). Physical Layer
+The physical layer is responsible for the physical cable or wireless connection between network nodes. It defines the connector, the electrical cable or wireless technology connecting the devices, and is responsible for transmission of the raw data, which is simply a series of 0s and 1s, while taking care of bit rate control.
+
+URL Syntax :
+[protocol-name] : // <sub-domain>/<domain>/<host>:<port>/<resource-url>
+
+URI Segment : In any URL which parts are separated by '/' is called as URI segment.
+
+After port segment it's basically path to resource.
+
+After protocol segment and before endpoint is known as domain name.
+Every domain name may have a sub-domain or not but will have a port, and every domain will have an IP address too. Since anyone can't learn or remember IP address so we provide a alias name this alias name is called as domain name and this domain name has to be registered (mapped) with the IP and using DNS (Domain Name Server).
+
+Ques : Identify protocol, port, URI segment, domain host, domain name, sub domain, resource url, extension, mime type, IP address, loopback address, local address, foriegn address and resource.
+URL : http://dev.localhost/myproject/admin/p1.php
+
+Ans : 
+Protocol : http://
+Port : 80 (Unsecured)
+URI segment : dev.localhost/myproject/admin/p1.php
+Domain host : localhost
+Domain name : unavailable
+Sub domain : dev
+Resource URL : myproject/admin/p1.php
+Extension : .php
+MIME type : .php file
+IP address : 127.0.0.1
+Loopback address : 127.0.0.1
+Foreign address : [::1]
+Resource : p1.php
+Local address : DESKTOP-E0AP5IL:0
+
+Ques : What is MIME type?
+Ans : MIME stands for Multipurpose Internet Mail Extention. When a file present on any server then we call file extension as MIME type.
+
+How browser handles a file in the browser?
+Browser checks for the MIME type supported by browser meta catalog (Dictionary).
+If it exists, then it will be loaded in the memory else it will thrown as a download (this is reason why browser doesn't) give any memory allocation to the non-supported file. And will be sent to downloads.
+This happens because the browser can support two types of file :
+a). Renderable
+b). Non-renderable
+
+Ques : How types of files exist in browser?
+Ans : Two (Renderable and Non-renderable).
+
+
+1). MIME type supported : Occupie Memory
+	(i) Renderable : The file which follows SGML standard or WHATWG standard.
+	    SGML : HTML4
+	    WHATWG : HTML5
+	file:///c:/Users/Deeproshan%20Kumar/Desktop/test/index.html
+	Protocol : File
+	System : Local
+
+	(ii) Non-renderable : The file which don't follow SGML or WHATWG standard will be loaded as plain text (as raw file) in that case we 		 -need to add handlers to handle such type of file.
+	file:///c:/Users/Deeproshan%20Kumar/Desktop/test/index.html
+	Protocol : File
+	System : Local
+
+2). MIME type not supported : Doesn't occupy memory direct download.
+
+
+How to run any PHP file in the browser?
+1). Add Handler PHP8 ---> Software ---> PHP Interpreter ---> Activate ---> PHP Plain Text ---> Input Parse or Compile ---> 
+(meta base command style script noscript link title)
+
+How browser handles file in the browser?
+Browser checks for the MEME type supported by browser meta catalog (Dictionary).
+If it exists, then it will be loaded in the memory, else it will be thrown as a download and don't give any memory allocation to the non- supported file and will be sent to the download.
+
+This happens, because the browser can support two types of file :
+a). Renderable
+b). Non-renderable
+
+Example :
+index.html : Renderable
+p1.txt : Non-renderable
+style.css : Non-renderable
+p1.jpg : Renderable
+p1.png : Renderable
+p1.doc : Download
+p1.docx : Download
+p1.xls : Download
+p1.php : Non-renderable
+index.exe : Download (MIME type not supported).
+
+
+IF MEME Type Supported : 
+i). Renderable : The file which follows SGML standard or WHATWG standard known as renderable file.
+ii). Non-renderable : The file which don't follow SGML or WHATWG standard will be loaded as plain text (as raw file) in that case we need to add handlers to handle such type of file as knonw as non-renderable file.
+
+IF MEME Type Not Supported :
+Don't occupy memory and direct download.
+
+Getting Started with PHP :
+Goto - C:/laragon/www
+
+Step 1 : Create folder
+             mkdir app-2021
+
+Step 2 : Goto inside app-2021 folder
+             cd app-2021
+
+Step 3 : How to create php file by using CMD?
+             start notepad p1.php
+
+Step 4 : How to run php file?
+             php <filename.php>
+
+There are two possible cases.
+Case 1 : You will get an output.
+Case 2 : php not recognized as internal or external command.
+
+You have written the code of PHP----> Execute PHP interpreter
+PHP interpreter ----> laragon
+1). Set the environment variable
+2). Use the laragon inbuilt terminal
+
+How many ways we can run php programs :
+1). Using Laragon Terminal
+Launch laragon terminal
+Goto file
+Type : PHP filename.php
+Output : Terminal ----> PHP CLI mode
+
+2). Using CMD/git bash...
+Goto file
+Type : PHP filename.php
+Output : Terminal ----> PHP CLI mode
+
+3). Using PHP Inbuilt Server
+CLI server
+Goto file 
+Yype : php -S localhost:<port-no> (Where, -S is command line argument)
+Goto browser
+Make a request
+Localhost:<port-no>
+Type : URL : filename.php
+URL : localhost : <port-no>/file-name.php
+Output : Web ----> php CLI web mode
+Note : In this case you don't need to enable laragon server.
+In version 5.6.2 php supports inbuilt server.
+Press ctrl+c to stop running server.
+
+4). Laragon (Server) Web Interfacce
+Laragon Server : ON
+PHP : Apache (ON)
+MySQL : ON
+Make a request using browser for http://localhost:<apache-port>
+
+OR
+
+Quick Open (By using cmd)
+Window+R
+Type cmd and hit enter.
+
+How many ways exists to execute php code?
+1). PHP CLI mode,
+(i) Laragon terminal
+(ii) Git bash
+(iii) CMD/powershell
+(iv) PHP interactive mode ---> php REPL php (>)
+
+How to launch PHP REPL mode?
+cmd:>
+php -a (Where, -a is command line argument)
+php > Without using opening and closing of PHP tags but ; is mandatory.
+
+WAP a program in php interactive mode.
+php > $x="Deeproshan";
+php > echo $x;
+Deeproshan
+
+When we supply these arguments, the program starts executong in the same, given environment.
+
+How to see list of all arguments?
+***cmd : > php -help***
+php -a : Run as interactive shell
+php -n : No configuration (ini) files will be used
+php -i : PHP information
+php -r : Execute the code as readline
+php -v : display the current version of PHP
+php --version : display the current version of PHP
+php -s : Run the inbuilt CLI server of PHP <@v php 5.6.2>
+php -h : Run the helps
+php -m : Loads the important modules initilized by php.ini
+
+WAP in PHP to run PHP code as readline.
+We will use php -r command to run the code in readline.
+cmd : >php -r "echo 'My name is Deeproshan';"
+My name is Deeproshan
+
+2). PHP Web Mode
+(i) PHP CLI Server (php -S <url>:<any-port-no>
+(ii) Laragon Web Interface
+
+We have only two types of program in any programming language :
+1). With input
+2). Without input
+
+How to create our first program with input in web interface?
+1).  Create a HTML form
+2). Add any number of fields 
+3). Add a submit button
+4). Add form tag with action, method="GET" or method="POST"
+5). Add the server side page URL which is going to handle the request at Server-side.
+6). Fill the form and hit on submit button.
+7). You will get a page not found 404 error. Because resource doesn't exist.
+8). Create a server-side page, which can handle, client request and process data and give the response.
+9). Use the super gloal variable of PHP to accept the request using $_REQUEST to handle the form fields.
+10). Since, $_REQUEST is a Array, it has a key as name field attribute, in HTML form and use echo statement to display the output and after words comment it.
+11). Note that, add id and name attribute on HTML forms to handle each form controls on server side.
+Concept : This concept is valid for all language JSP, Python, asp.net and PHP also.
+ID ---> For JavaScript or client side.
+Name ---> For server side
+
+TASKS : 
+1). WAP in PHP to accept, name and display on another page.
+2). WAP in PHP to take three numbers as input and display the result of sum.
+3). WAP in PHP to make calculator to find +,-,*,/
+4). WAP in PHP to take info of user name, email, password, mobile no. and display his/her information in next page.
+5). WAP in PHP to take p,r,t and calculate SI.
+6). WAP in PHP to accept length, breadth from user and calculate area, parameter of rectangle.
+7). WAP in PHP to take radius as input and find area, circumference of a circle.
+8). WAP in PHP to find the remainder of the given two number when a/b with modulo operator.
+9). WAP in PHP to find the remainder of the given two number when a/b without modulo operator. *
+10). WAP in PHP to take a and b as input and use -, /, * operators to find sum but you are not allowed to use + operator. *
+Conditions:
+a>b always
+a>0 always (+ve)
+b>0 always (+ve)
+11). WAP in PHP to take input of five subjects of students, enter his marks and show the marks of each subject with overall percentage. *
+
+Client Side : Front-end language (HTML, CSS, CSS3, Less, SASS, Vanilla JS, jQuery,Bootstrap, Tailwind CSS, SVG, Images, Fonts, Icons, Widgets, Layouts, Other framework of JS (React JS, Angular JS, Backbone JS, Ember JS, NextJS, Redux, Vue Js...).
+
+Server Side : Back-end Language including database (C++, GO lang, Rust, C, PHP, Python, Ruby, R, Node.js, ExpressJs, Java(JSP, Servlet), ASP.net, Scala, Perl,..)
+
+Database :
+SQL Based Database : (Structured Database)
+Oracle
+MySQL
+SQLite
+MariaDB
+MS SQL
+
+No-SQL Database : (Unstructed Database)
+MongoDB
+Dynamo DB
+CouchDB
+Candendra
+Redis
+PostgreSQL
+Firebase
+S3 (Simple Storage Service) Bucket (AWS)
+
+Using client side validation on PHP :
+What is validation and types of validation :
+1). Validating or restricting the user form entering the invalid data in the form field is called as validation.
+
+Most confusing question :
+Ques : What is difference b/w validation, authentication, authorization?
+Ans : Validation will prevents server from providing invalid data or uploading illegal files format in the database on server by the stupid user.
+Note : In the case of validation process there is no involvement of database there can be exist only logic.
+For example : 
+Enter the name : 7271053944 (invalid) 
+Upload Pic : Video.mp4 (invalid)
+Both side validation (Client side and Server side) should be done, because there may be chance that user may have blocked his javascript or disabled the javascript.
+
+But if we check the format of email using regex (Regular Expression) then it's validation.
+
+Ques : Making an email id unique for each registration is example?
+Ans : Authentication (Because user email id will be checked from databse).
+
+
+Authentication : Cross checking the identity of existing user from database is called as authentication.
+Such type of feature is used in case of Login, Email verification, Unique email, Forget password, Google login, Facebook login, Linkedin Login, Github login, OTP verification etc.
+
+Ques : Captcha is which type of validation?
+Ans : Completely Autmated Public Turing Test to Tell Computers and Humans Apart.
+Captcha is always server side because it invloves session storage which is a process at server side only. And data of session is always encrypted.
+
+Authorization : Authorization is process of after authentication. It refers to permission given to authenticated user, once the user is valid then it may have few permission or may have any permission. This concept is authorization.
+For example : Register ---> Logged In ---> Authenticated ---> Logged In (But unable to see any contents) ---> Means you are not authorized person.
+
+Types of Authorization :
+1). No Authorization (User)
+2). Fully Authorization (Super Admin)
+3). Partially Authorization (Admin)
+Where, User, Super Admin and Admin are roles. Roles and permission is kind of authorizations.
+
+Example :
+Trial Version | Premium Version
+10 Features  | 20 Feautures 
+Non-authorized Authorized
+
+
+Example : School ERP (Enterprise Resource Planning) : 
+1). Teacher
+	| Add Attendance
+	| View Attendance
+
+2). Student 
+	| View Attendance
+Here, Student can't add attendance because student is not authorized for add attendance option.
+
+
+Task : 
+Working with PHP CLI :
+1). Hello World (Without Input)
+2). Addition of two numbers (With Input)
+
+In order to take input on console window or CLI mode we need a scanner.php file where we define input() function.
+
+Input() function (Inside scanner.php) :
+In order to understand this how input() function works following concepts are required.
+1). Use of echo statement
+
+Ques : Do PHP supports inbuilt console input function?
+Ans : Yes, readline() is pre-defined function used to take input.
+
+Ques : WAP in PHP to perform addition of two numbers using readline() method in CLI mode.
+<?php
+Ans :
+$num1=readline('Enter the first number : ');
+$num2=readline('Enter the second number : ');
+$sum=$num1+$num2;
+echo $sum;
+?>
+
+OUTPUT :
+Enter the first number : 30
+Enter the second number : 50
+The sum is : 80
+
+Use of echo statement :
+We can echo statement for printing the string value, or any variable value or any constant literal.
+php> echo 'Hello World';
+Hello World
+php> echo "Hello World";
+Hello World
+
+php> echo 10; // Constant literal
+10
+
+php> $x=10;
+10
+
+php> echo true; // Constant literal
+1
+
+php> echo false // Constant literal
+
+php> echo [10,20,30]
+Array to string conversion error.
+How to print array with echo :
+php> echo [10,20,30];
+Notice : Array to string conversion in php shell code on line 1
+Array
+php> echo join([10,20,30]);
+102030
+php> echo implode('',[10,20,30]);
+102030
+
+php> echo null;
+php> echo json_encode(null);
+null
+
+php> echo (null==false);
+1
+
+php> echo (null===false);
+Boolean false 
+
+php> echo (0=='')
+1
+
+php> echo (0==null);
+1
+
+php> echo (0==false)
+1
+
+Note 1 : null==0==false==''==true==1
+
+Note 2 : echo will evaluate the expression as a string, but in the case of === we will see difference.
+Lower conversion (int) + Upper conversion (string)
+________________________________
+
+php> echo json_encode('');
+""
+
+php> echo json_encode(false);
+false
+
+php> echo json_encode(EOL);
+"\r\n"
+
+php> echo getType(); // Data type check
+_______________________________
+
+Ques 1 : $x=(false=='');
+Ans : 1
+
+Ques 2 : $x=(false==='');
+Ans : 
+
+2). Driver protocol [protocol]://
+PHP supports list of driver protocols.
+These are also called as wrapper, or scheme in the PHP.
+file:// — Accessing local filesystem
+http:// — Accessing HTTP(s) URLs
+ftp:// — Accessing FTP(s) URLs
+php:// — Accessing various I/O streams 
+zlib:// — Compression Streams
+data:// — Data (RFC 2397)
+glob:// — Find pathnames matching pattern
+phar:// — PHP Archive
+ssh2:// — Secure Shell 2
+rar:// — RAR
+ogg:// — Audio streams
+expect:// — Process Interaction Streams
+
+php:// - It can handle any kind of input and output from any interface it can be terminal, it can be UI based, or any third party API.
+PHP provides a number of miscellaneous I/O streams that allow access to PHP's own input and output streams, the standard input, output and error file descriptors, in-memory and disk-backed temporary file streams, and filters that can manipulate other file resources as they are read from and written to.
+The meaning of STDIN : php://input (Standard Input)
+The meaning of STDOUT : php://output (5.6.2) or php://memory<(5.6.-) (Standard Output)
+The meaning of STDERR : Standard Error
+
+php://stdin, php://stdout and php://stderr 
+
+php://stdin, php://stdout and php://stderr allow direct access to the corresponding input or output stream of the PHP process. The stream references a duplicate file descriptor, so if you open php://stdin and later close it, you close only your copy of the descriptor-the actual stream referenced by STDIN is unaffected. It is recommended that you simply use the constants STDIN, STDOUT and STDERR instead of manually opening streams using these wrappers.
+
+php://stdin is read-only, whereas php://stdout and php://stderr are write-only.
+
+php://input 
+php://input is a read-only stream that allows you to read raw data from the request body. php://input is not available with enctype="multipart/form-data".
+
+php://output 
+php://output is a write-only stream that allows you to write to the output buffer mechanism in the same way as print and echo.
+Note : These are used for raw input only (JSON input) from client request.
+
+What is fgets()?
+fgets() allows you to read the data from any input resource. It internally uses, file pointer. By default it can read 1024 characters (doesn't recognized EOL (End of line) at a time from input buffer.
+1). fgets() : Termnal read
+fgets(STDIN,1024);
+
+2). fgets() : Read file
+The fgets() can read any numbers of characters from any file, or resource before EOF.
+
+Case 1 : fgets accepts two arguments :
+1. resource handler this can be a wrapper, scheme, file pointer.
+2. buffer_size : no. of memory blocks reserved for, input characters stream.
+
+It works like a link list 
+where,
+0 : Address
+1 : Base Data : Header Data : Header Node
+2 : Other Nodes
+if buffer_size not supplied : default 1024
+if buffer_size == 0 : false
+if buffer_size == 1 : false
+if buffer_size > 1 : Character bit reserved in memory block headed (pointed by) by base node.
+
+3). Concept of user-defined function :
+Syntax to define user-defined function ---
+function <function-name>($args1, $args2, $args3,...){
+// Code to be executed
+}
+
+function wish(){
+echo "Hii ! Good Morning...";
+}
+
+WAP in PHP to add two number using user-defined function.
+<?php
+$num1=readline("Enter the first number : ");
+$num2=readline("Enter the second number : ");
+echo add($num1,$num2);
+function add($num1,$num2){
+return $num1+$num2;
+}
+?>
+
+Output : 
+Enter the first number : 20
+Enter the second number : 10
+30
+
+<?php
+$num1=readline("Enter the first number : ");
+$num2=readline("Enter the second number : ");
+#echo add($num1,$num2);
+function add($num1=0,$num2=0){
+return $num1+$num2;
+}
+printf("The result with 0 argument : %d\n",add());
+printf("The result with 1 argument : %d\n",add($num1));
+printf("The result with 1 argument : %d\n",add($num2));
+printf("The result with 0 argument : %d\n",add($num1,$num2));
+?>
+
+Output :
+Enter the first number : 10
+Enter the second number : 20
+The result with 0 argument : 0
+The result with 1 argument : 10
+The result with 1 argument : 20
+The result with 0 argument : 30
+
+4). Retrun value of function :
+Using return keyword inside function the function should return any value we have already seen in above add() function.
+
+5). Default argument of function :
+If we want to make argument optional (can pass or dont pass) in that case define a default value to the argument in function declaration and definition.
+function add($a, $b){
+}
+
+$a : Mendatory Argument : The arguments which are compulsary.
+$b : Optional Argument : The optional are arguments have a default value which makes them optional such that if we pass the value $argument takes the assigned value. If not it is going to use the dafaut value. This makes these argument(parameters, inputs) as optional argument.
+
+6). File-pointer and file handling : File pointer is a special types of variable that store reference to memory allocation of any file. $fp=fopen('filename.txt','mode') where $fp acts as a file pointer which is pointing to the reference address of anyfile.txt. $fp is also known as resource handler.
+
+File handling : Performing I/O operation on the file, to store the data permanently in the file system of OS is called file handling.
+
+7). I/O buffer or I/O streams : Whenever we are going to take input from standard input devices. It is electrically converted into digital signals and stored in buffer by BIOS which can be used by kernal (Core of OS) to internally use this input and output values.
+
+I/B : Input Buffer - Stores all binary form of input taken from input device which are digitally converted from a analog signal in form of current.
+
+O/B : Output Buffer - Stores all binary form of output and calculations calculated by ALU and sent to primary memory which is stored at output buffer which can be transferred to, any output device.
+
+8). Use of trim() function - It truncates the extra spaces and new line characters from a input string.
+
+<?php
+$name="    Deeproshan Kumar    ";
+echo $name;
+echo PHP_EOL;
+printf("The length of the name is : %d",strlen($name));
+$clean_name=trim($name);
+printf("The length of the name is : %d",strlen($clean_name));
+?>
+
+VARIABLE($) & REFERENCE TO VARIABLE($$) OR VARIABLE TO VARIABLE REFERENCE IN PHP :
+******************************************
+A variable is a kind of identifier used for storing the constant literals. A variable is also a reference to memory.
+Identifier : The name given to anything is called as identifier.
+Example : It can be variable name, array name, function name, file name, class name, ... etc. User defined naming convention is knonw as identifier.
+
+Ques 1 :
+class Test{
+private $a;
+private $b;
+public function dance($msg){
+    return $msg;
+}
+}
+
+How many identifiers are there?
+5 Identifiers
+
+Syntax : $<variable-name>=<any-value>;
+$x; // Valid
+echo $x; // Error : Undefined Index $x;
+
+Rules to make a identifier :
+1). total // valid
+2). total_ // valid
+3). total123 // valid
+4). 123total //invalid
+5). _123total //valid
+6). _total // valid
+7). _123 // valid
+8). total_123 // valid
+9). total 123 // invalid
+10). is_passed // valid
+11). is passed // invalid
+12). _Total // valid
+13). TOTAL // valid
+14). TOTAL_ // valid
+
+Keypoints :
+(i) alphanumeric_(underscore) is valid, but numericalpha_(underscore) is invalid.
+(ii) Allowed characters : a-z, A-Z, _, 0-9[1,n] 
+(iv) Special characters can't be used instead of $ and $$ but it's only at 0th index for variable naming convention.
+(v) In PHP variable names are case sensitive, means $name and $Name are two different different variables.
+
+A variable can hold any type of value depending on the data-type. 
+For example : 
+1). A variable can hold numerical values, like int, float.
+2). A variable can hold a Boolean value like true and false.
+3). A variable can hold a collection of value like array.
+4). A variable can hold a value like empty or null value.
+5). A variable can hold Resource like mysqli resource object.
+6). A variable can hold a string value B/W ‘’ and “”, heredoc, newdoc strings.
+7). A variable can hold an object or instances.
+
+8). A variable can hold context of super globals (also called as super global variable).
+
+Example 1 :
+<?php
+// Making of numerical variable
+<?php
+// Making of numerical variable
+$x=10; // declaration+initilization
+echo $x; // echo is predefined language construct
+echo PHP_EOL; // predefined constant
+echo getType($x); // predefined function
+?>
+Output :
+10 
+integer
+
+Example 2 :
+<?php
+// WAP in PHP to show floating point numbers.
+$x=011; // Octal number system
+echo $x;
+echo PHP_EOL;
+#$a=08; // Invalid numeric literal (Conversion to octal range not possible)
+#echo $a;
+?>
+Output :
+9
+
+
+
+Example :
+<?php
+// WAP in PHP to show how a variable can hold a variable value.
+$arr=array(10,20,30,'red','green');
+echo $arr; // Array to string conversion error
+echo PHP_EOL;
+print_r($arr); // r-resource
+echo PHP_EOL;
+var_dump($arr)
+?>
+Output :
+Notice: Array to string conversion in C:\laragon\www\app-2021\variables\p6.php on line 4
+Array
+Array
+(
+    [0] => 10
+    [1] => 20
+    [2] => 30
+    [3] => red
+    [4] => green
+)
+
+array(5) {
+  [0]=>
+  int(10)
+  [1]=>
+  int(20)
+  [2]=>
+  int(30)
+  [3]=>
+  string(3) "red"
+  [4]=>
+  string(5) "green"
+}
+
+Note : We can use print_r() or var_dump() to print output of any array.
+print_r() : Prints the array or any resource in readable format it only show the data inside it.
+var_dump() : It will dump the entire data about the variable hence var_dump() shows the data or data, called meta data.
+var_export() : Alias of var_dump() same as var_dump() but it shows the representation of the data in more readable not metadata.
+Example :
+<?php
+// wap in php to assign the array to variable.
+$color[0]='red';
+$color[1]='green';
+$color[2]='orange';
+$color[3]='black';
+echo getType($color);
+echo PHP_EOL;
+print_r($color);
+
+$color1[]='RED';
+$color1[]='GREEN';
+$color1[]='ORANGE';
+$color1[]='BLACK';
+$color1[]='WHITE';
+echo PHP_EOL;
+print_r($color1);
+?>
+
+Output :
+array
+Array
+(
+    [0] => red
+    [1] => green
+    [2] => orange
+    [3] => black
+)
+
+Array
+(
+    [0] => RED
+    [1] => GREEN
+    [2] => ORANGE
+    [3] => BLACK
+    [4] => WHITE
+)  
+
+<?php
+// WAP in PHP to show nullable and empty variable.
+$x='';
+var_dump($x);
+echo PHP_EOL;
+var_dump($x=='');
+echo PHP_EOL;
+var_dump($x=="");
+echo PHP_EOL;
+var_dump($x==='');
+echo PHP_EOL;
+var_dump($x==="");
+echo PHP_EOL;
+var_dump(empty($x));
+echo PHP_EOL;
+var_dump(empty(''));
+echo PHP_EOL;
+var_dump(empty(""));
+$y="";
+var_dump($y);
+echo PHP_EOL;
+var_dump($x==$y);
+echo PHP_EOL;
+var_dump($x===$y);
+?>
+Output :
+string(0) ""
+
+bool(true)
+
+bool(true)
+
+bool(true)
+
+bool(true)
+
+bool(true)
+
+bool(true)
+
+bool(true)
+string(0) ""
+
+bool(true)
+
+bool(true)
+
+Note : Length of empty=0 and data type = string, ASCII value=0.
+
+Example :
+Empty v/s Space
+<?php
+echo 'Be aware b/w empty and <space>';
+echo PHP_EOL;
+printf("The value from empty:",'');
+echo PHP_EOL;
+printf("The value from empty space : ",' ');
+echo PHP_EOL;
+var_dump(''==' ');
+var_dump(''===' ');
+echo PHP_EOL;
+echo '';
+echo PHP_EOL;
+echo getType('');
+echo PHP_EOL;
+echo strlen('');
+echo PHP_EOL;
+echo ' ';
+echo PHP_EOL;
+echo getType(' ');
+echo PHP_EOL;
+echo ord(' '); // Prints ASCII
+echo PHP_EOL;
+echo ord('a'); // Prints ASCII
+?>
+Output :
+Be aware b/w empty and <space>
+The value from empty:
+The value from empty space :
+bool(false)
+bool(false)
+
+
+string
+0
+
+string
+32
+97
+Example :
+<?php
+// WAP in PHP to show nullable data type.
+$x=null; // Doesn't exist
+echo getType($x);
+echo PHP_EOL;
+var_dump(is_null($x));
+var_dump(empty($x));
+var_dump($x==null);
+var_dump($x===null);
+var_dump(''==null); // Implicit typecast have done.
+var_dump(''===null);
+echo 'Very very important';
+echo PHP_EOL;
+$y='';
+var_dump($y);
+var_dump(isset($y));
+var_dump(isset($w));
+var_dump(empty($x));
+var_dump(isset($x));
+var_dump($w);
+var_dump($x);
+?>
+Output :
+NULL
+bool(true)
+bool(true)
+bool(true)
+bool(true)
+bool(true)
+bool(false)
+Very very important
+string(0) ""
+bool(true)
+bool(false)
+bool(true)
+bool(false)
+
+Notice: Undefined variable: w in C:\laragon\www\app-2021\variables\p10.php on line 20
+NULL
+NULL
+
+Ques : What is the major difference b/w null and undefined variable in PHP?
+Ans : $x=’a’; isset($x); ---> true
+echo $x; prints ---> a
+If you try these things with a undefined variable then,
+$y;
+echo $y; // undefined variable
+Since you are printing this with echo statement you will see nothing.
+var_dump($y); // Some error, undefined variable $y but data type is NULL.
+Isset($); false ---> valid ---> $y doesn’t exist at all ---> $y is given memory.
+$z=null; ---> // $z ---> Memory allocated
+echo $z; // No error ---> No output will be generated.
+Var_dump($z); // NULL with no error
+isset($z); // False here $z is allocated into memory without any value.
+unset($y); // Deletes from memory
+echo $y;
+unset($z); // Deletes from memory
+echo $z;
+var_dump($y); // Undefined variable ---> NULL
+var_dump($z); // No error ---> NULL
+unset($y);
+unset($z);
+var_dump($y); // Undefined variable ---> NULL
+var_dump($z); // Undefined variable ---> NULL
+
+Example :
+<?php
+// WAP in PHP to show the difference b/w null and undefined.
+$x='a'; // Memory assigned
+echo $x;
+echo PHP_EOL;
+var_dump($x);
+var_dump(isset($x));
+echo PHP_EOL;
+printf("The memory x=%d", memory_get_usage($x));
+unset($x);
+printf("The memory x=%d", memory_get_usage($x));
+echo PHP_EOL;
+$y;
+echo PHP_EOL;
+var_dump($y);
+var_dump(isset($y));
+echo PHP_EOL;
+printf("The memory y=%d", memory_get_usage($y));
+unset($y);
+printf("The memory y=%d",memory_get_usage($y));
+$z=null; // Memory
+echo $z;
+echo PHP_EOL;
+var_dump($z);
+var_dump(isset($z));
+echo PHP_EOl;
+printf("The memory z=%d",memory_get_usage($z));
+unset($z);
+printf("The memory z=%d",memory_get_usage($z));
+?>
+Output :
+a
+string(1) "a"
+bool(true)
+
+The memory x=2097152
+Notice: Undefined variable: x in C:\laragon\www\app-2021\variables\p11.php on line 11
+The memory x=396272
+
+
+Notice: Undefined variable: y in C:\laragon\www\app-2021\variables\p11.php on line 15
+NULL
+bool(false)
+
+
+Notice: Undefined variable: y in C:\laragon\www\app-2021\variables\p11.php on line 18
+The memory y=396272
+Notice: Undefined variable: y in C:\laragon\www\app-2021\variables\p11.php on line 20
+The memory y=396272
+NULL
+bool(false)
+
+Warning: Use of undefined constant PHP_EOl - assumed 'PHP_EOl' (this will throw an Error in a future version of PHP) in C:\laragon\www\app-2021\variables\p11.php on line 26
+PHP_EOlThe memory z=396272
+Notice: Undefined variable: z in C:\laragon\www\app-2021\variables\p11.php on line 29
+The memory z=396272
+
+Resources : 
+<?php
+$conn=mysqli_connect(‘localhost:3306’, ‘root’, ‘’, ‘’);
+var_dump($conn); #Object ---> Resource
+?>
+Object :
+<?php
+// WAP in PHP to show object using class.
+class Student{
+private $name=’Deeproshan’;
+private $class=’BTech’;
+private $rollno=’1001’;
+}
+$std= new Student();
+var_dump($std); // User-defined ---> Type(Resource)
+?>
+
+Output :
+object(Student)#1 (3) {
+  ["name":"Student":private]=>
+  string(16) "’Deeproshan’"
+  ["class":"Student":private]=>
+  string(11) "’BTech’"
+  ["rollno":"Student":private]=>
+  string(10) "’1001’"
+}
+
+SUPER GLOBAL VARIABLES :
+These are special with global context and scope these predefined variable by PHP and it has been reserved for some special purpose.
+Super global variable are of two types :
+1). Mingled Super Global Variable
+2). Non-mingled Super Global Variable
+Super global variable in general terms :
+$_GLOBALS (Non mangled)
+$_SERVER (Mangled)
+$_GET (Mangled)
+$_POST (Mangled)
+$_FILES (Mangled)
+$_COOKIE (Mangled)
+$_SESSION (Mangled)
+$_REQUEST (Mangled)
+$_ENV (Mangled)
+
+Other Super Global Variables :
+$http_response_header : Non-mangled
+$argc : Non-mangled (Argument Count)
+$argv : Non-mangled (Argument Variable)
+$php_errormsg : Deprecated
+Note :: Non mangled : Which starts with $ and _ as prefix this naming convention is called mangling.
+Same thing is also valid in Python : __name__, __main___, __init(self)__
+In Javascript : __proto__
+
+Example :
+<?php
+// WAP in PHP to show how a variable can hold a variable value.
+$arr=array(10,20,30,'red','green');
+echo $arr; // Array to string conversion error
+echo PHP_EOL;
+print_r($arr); // r-resource
+echo PHP_EOL;
+var_dump($arr)
+?>
+Output :
+Notice: Array to string conversion in C:\laragon\www\app-2021\variables\p6.php on line 4
+Array
+Array
+(
+    [0] => 10
+    [1] => 20
+    [2] => 30
+    [3] => red
+    [4] => green
+)
+
+array(5) {
+  [0]=>
+  int(10)
+  [1]=>
+  int(20)
+  [2]=>
+  int(30)
+  [3]=>
+  string(3) "red"
+  [4]=>
+  string(5) "green"
+}
+
+Note : We can use print_r() or var_dump() to print output of any array.
+print_r() : Prints the array or any resource in readable format it only show the data inside it.
+var_dump() : It will dump the entire data about the variable hence var_dump() shows the data or data, called meta data.
+var_export() : Alias of var_dump() same as var_dump() but it shows the representation of the data in more readable not metadata.
+Example :
+<?php
+// wap in php to assign the array to variable.
+$color[0]='red';
+$color[1]='green';
+$color[2]='orange';
+$color[3]='black';
+echo getType($color);
+echo PHP_EOL;
+print_r($color);
+
+$color1[]='RED';
+$color1[]='GREEN';
+$color1[]='ORANGE';
+$color1[]='BLACK';
+$color1[]='WHITE';
+echo PHP_EOL;
+print_r($color1);
+?>
+
+Output :
+array
+Array
+(
+    [0] => red
+    [1] => green
+    [2] => orange
+    [3] => black
+)
+
+Array
+(
+    [0] => RED
+    [1] => GREEN
+    [2] => ORANGE
+    [3] => BLACK
+    [4] => WHITE
+)  
+
+<?php
+// WAP in PHP to show nullable and empty variable.
+$x='';
+var_dump($x);
+echo PHP_EOL;
+var_dump($x=='');
+echo PHP_EOL;
+var_dump($x=="");
+echo PHP_EOL;
+var_dump($x==='');
+echo PHP_EOL;
+var_dump($x==="");
+echo PHP_EOL;
+var_dump(empty($x));
+echo PHP_EOL;
+var_dump(empty(''));
+echo PHP_EOL;
+var_dump(empty(""));
+$y="";
+var_dump($y);
+echo PHP_EOL;
+var_dump($x==$y);
+echo PHP_EOL;
+var_dump($x===$y);
+?>
+Output :
+string(0) ""
+
+bool(true)
+
+bool(true)
+
+bool(true)
+
+bool(true)
+
+bool(true)
+
+bool(true)
+
+bool(true)
+string(0) ""
+
+bool(true)
+
+bool(true)
+
+Note : Length of empty=0 and data type = string, ASCII value=0.
+
+Example :
+Empty v/s Space
+<?php
+echo 'Be aware b/w empty and <space>';
+echo PHP_EOL;
+printf("The value from empty:",'');
+echo PHP_EOL;
+printf("The value from empty space : ",' ');
+echo PHP_EOL;
+var_dump(''==' ');
+var_dump(''===' ');
+echo PHP_EOL;
+echo '';
+echo PHP_EOL;
+echo getType('');
+echo PHP_EOL;
+echo strlen('');
+echo PHP_EOL;
+echo ' ';
+echo PHP_EOL;
+echo getType(' ');
+echo PHP_EOL;
+echo ord(' '); // Prints ASCII
+echo PHP_EOL;
+echo ord('a'); // Prints ASCII
+?>
+Output :
+Be aware b/w empty and <space>
+The value from empty:
+The value from empty space :
+bool(false)
+bool(false)
+
+
+string
+0
+
+string
+32
+97
+Example :
+<?php
+// WAP in PHP to show nullable data type.
+$x=null; // Doesn't exist
+echo getType($x);
+echo PHP_EOL;
+var_dump(is_null($x));
+var_dump(empty($x));
+var_dump($x==null);
+var_dump($x===null);
+var_dump(''==null); // Implicit typecast have done.
+var_dump(''===null);
+echo 'Very very important';
+echo PHP_EOL;
+$y='';
+var_dump($y);
+var_dump(isset($y));
+var_dump(isset($w));
+var_dump(empty($x));
+var_dump(isset($x));
+var_dump($w);
+var_dump($x);
+?>
+Output :
+NULL
+bool(true)
+bool(true)
+bool(true)
+bool(true)
+bool(true)
+bool(false)
+Very very important
+string(0) ""
+bool(true)
+bool(false)
+bool(true)
+bool(false)
+
+Notice: Undefined variable: w in C:\laragon\www\app-2021\variables\p10.php on line 20
+NULL
+NULL
+
+Ques : What is the major difference b/w null and undefined variable in PHP?
+Ans : $x=’a’; isset($x); ---> true
+echo $x; prints ---> a
+If you try these things with a undefined variable then,
+$y;
+echo $y; // undefined variable
+Since you are printing this with echo statement you will see nothing.
+var_dump($y); // Some error, undefined variable $y but data type is NULL.
+Isset($); false ---> valid ---> $y doesn’t exist at all ---> $y is given memory.
+$z=null; ---> // $z ---> Memory allocated
+echo $z; // No error ---> No output will be generated.
+Var_dump($z); // NULL with no error
+isset($z); // False here $z is allocated into memory without any value.
+unset($y); // Deletes from memory
+echo $y;
+unset($z); // Deletes from memory
+echo $z;
+var_dump($y); // Undefined variable ---> NULL
+var_dump($z); // No error ---> NULL
+unset($y);
+unset($z);
+var_dump($y); // Undefined variable ---> NULL
+var_dump($z); // Undefined variable ---> NULL
+
+Example :
+<?php
+// WAP in PHP to show the difference b/w null and undefined.
+$x='a'; // Memory assigned
+echo $x;
+echo PHP_EOL;
+var_dump($x);
+var_dump(isset($x));
+echo PHP_EOL;
+printf("The memory x=%d", memory_get_usage($x));
+unset($x);
+printf("The memory x=%d", memory_get_usage($x));
+echo PHP_EOL;
+$y;
+echo PHP_EOL;
+var_dump($y);
+var_dump(isset($y));
+echo PHP_EOL;
+printf("The memory y=%d", memory_get_usage($y));
+unset($y);
+printf("The memory y=%d",memory_get_usage($y));
+$z=null; // Memory
+echo $z;
+echo PHP_EOL;
+var_dump($z);
+var_dump(isset($z));
+echo PHP_EOl;
+printf("The memory z=%d",memory_get_usage($z));
+unset($z);
+printf("The memory z=%d",memory_get_usage($z));
+?>
+Output :
+a
+string(1) "a"
+bool(true)
+
+The memory x=2097152
+Notice: Undefined variable: x in C:\laragon\www\app-2021\variables\p11.php on line 11
+The memory x=396272
+
+
+Notice: Undefined variable: y in C:\laragon\www\app-2021\variables\p11.php on line 15
+NULL
+bool(false)
+
+
+Notice: Undefined variable: y in C:\laragon\www\app-2021\variables\p11.php on line 18
+The memory y=396272
+Notice: Undefined variable: y in C:\laragon\www\app-2021\variables\p11.php on line 20
+The memory y=396272
+NULL
+bool(false)
+
+Warning: Use of undefined constant PHP_EOl - assumed 'PHP_EOl' (this will throw an Error in a future version of PHP) in C:\laragon\www\app-2021\variables\p11.php on line 26
+PHP_EOlThe memory z=396272
+Notice: Undefined variable: z in C:\laragon\www\app-2021\variables\p11.php on line 29
+The memory z=396272
+
+Resources : 
+<?php
+$conn=mysqli_connect(‘localhost:3306’, ‘root’, ‘’, ‘’);
+var_dump($conn); #Object ---> Resource
+?>
+Object :
+<?php
+// WAP in PHP to show object using class.
+class Student{
+private $name=’Deeproshan’;
+private $class=’BTech’;
+private $rollno=’1001’;
+}
+$std= new Student();
+var_dump($std); // User-defined ---> Type(Resource)
+?>
+
+Output :
+object(Student)#1 (3) {
+  ["name":"Student":private]=>
+  string(16) "’Deeproshan’"
+  ["class":"Student":private]=>
+  string(11) "’BTech’"
+  ["rollno":"Student":private]=>
+  string(10) "’1001’"
+}
+
+SUPER GLOBAL VARIABLES :
+These are special with global context and scope these predefined variable by PHP and it has been reserved for some special purpose.
+Super global variable are of two types :
+1). Mingled Super Global Variable
+2). Non-mingled Super Global Variable
+Super global variable in general terms :
+$_GLOBALS (Non mangled)
+$_SERVER (Mangled)
+$_GET (Mangled)
+$_POST (Mangled)
+$_FILES (Mangled)
+$_COOKIE (Mangled)
+$_SESSION (Mangled)
+$_REQUEST (Mangled)
+$_ENV (Mangled)
+
+Other Super Global Variables :
+$http_response_header : Non-mangled
+$argc : Non-mangled (Argument Count)
+$argv : Non-mangled (Argument Variable)
+$php_errormsg : Deprecated
+Note :: Non mangled : Which starts with $ and _ as prefix this naming convention is called mangling.
+Same thing is also valid in Python : __name__, __main___, __init(self)__
+In Javascript : __proto__

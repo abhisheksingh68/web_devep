@@ -1,0 +1,73 @@
+<?php
+echo "This is Deeproshan's Terminal";
+echo PHP_EOL;
+echo 'The Deeproshan Framework : Version 1.x';
+echo PHP_EOL;
+
+$commands=[
+'--h' => 'This is help command',
+'--v' => '1.x',
+'--a' => 'for Addition',
+'--s' => 'for Subtraction',
+'--m' => 'for Multiplication',
+'--d' => 'for Division',
+'--r' => 'for Remainder'
+];
+echo PHP_EOL;
+
+foreach($commands as $key => $value){
+     printf("%s\t\t: \t\t%s\n",$key,$value);
+}
+
+if(isset($argv[1])){
+     $command=$argv[1];
+     echo "\e[H\e[J";
+
+switch($command){
+     case '--v':
+     case '--version':
+          $output = '1.x';
+     break;
+
+     case '--help':
+     case '--h':
+          $output='This is help command.';
+     break;
+
+     case '--a':
+          $x=readline('Enter the number 1 : ');
+          $y=readline('Enter the number 2 : ');
+          $output=$x+$y;
+     break;
+
+     case '--s':
+          $x=readline('Enter the number 1 : ');
+          $y=readline('Enter the number 2 : '); 
+          $output=$x-$y;
+     break;
+
+     case '--m':
+          $x=readline('Enter the number 1 : ');
+          $y=readline('Enter the number 2 : ');
+          $output=$x*$y;
+      break;
+
+      case '--d':
+          $x=readline('Enter the number 1 : ');
+          $y=readline('Enter the number 2 : ');
+          $output=$x/$y;
+      break;
+
+      case '--r':
+          $x=readline('Enter the number 1 : ');
+          $y=readline('Enter the number 2 : ');
+          $output=$x%$y;
+      break;
+
+      default :
+          $output='Invalid Command';
+      break;
+}
+}
+echo $output;
+?>

@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<title>animated search box</title>
+	<link rel="stylesheet" type="text/css" href="">
+	<link rel="icon" type="text/css" href="abhi01.jpg">
+	<base href="">
+	<script defer src="" ></script>
+	<noscript></noscript>
+	<style type="text/css">
+		body
+		{
+			margin: 0px;
+			padding: 0px;
+			background:#f783ac;
+		}
+		.search_box
+		{
+         position: absolute;
+         top: 50%;
+         left:50%;
+         transform: translate(-50%,-50%);
+         background: navy;
+         height: 40px;
+         border-radius: 40px;
+         padding: 10px;
+
+		}
+		.search_box:hover > .search_txt
+		{
+          width: 240px;
+          padding: 0 6px;
+
+		}
+		.search_btn
+		{
+			color: ;
+			float: left;
+			width: 40px;
+			height: 40px;
+			border-radius: 50%;
+			background:aqua ;
+			justify-content: center;
+			display: flex;
+			align-items: center;
+			transition: 0.4s;
+		}
+		.search_box:hover > .search_btn
+		{
+          background: white;
+
+		}
+		.search_txt
+		{
+			border:none ;
+			background: none;
+			outline: none;
+			float: left;
+			padding: 0px;
+			color: white;
+			font-size: 16px;
+			transition: 0.4s;
+			line-height: 40px;
+			width:0px;
+		}
+
+
+	</style>
+</head>
+<body>
+     <div class="search_box">
+     	<input class="search_txt" type="text" name="" placeholder="Type To Search">
+     	<a class="search_btn" href="#"></a>
+     	<i class="fas fa-search"></i>
+     </div>
+</body>
+</html>

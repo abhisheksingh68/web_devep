@@ -1,0 +1,259 @@
+
+BASIC CONCEPT OF PROGRAMMING :
+
+How to create folder dynamically via date using cmd?
+Concept 1 : A folder name can't contain, illegal character like \, /, :, *, "", ?, |, <>
+
+If while running the command, mkdir %date% if you get an error, incorrect syntax error.
+Make sure you date format does not contain illegal character \, /, ?, *, "", |, :, <>.\
+
+Basic Story :
+PHP is a our technology, and php is a server side language.
+
+Why php is not executed on browser?
+https://www.facebook.com/
+file:///c:/Users/Abhay%20Singh/Desktop/App-2021/PHP/home.html
+
+1). According to client server model,
+2). Anything which is loaded by client (browser) will be called as resourse.
+
+https://www.facebook.com/profile-picture.png (Resource)
+
+Common terms used in Web Technology :
+1). Human (End User)
+2). God (Server)
+3). Prayer (Request)
+4). Blessings (Response)
+
+How end user makes a request?
+Ans : URL (Uniform Resource Locater)
+
+End-user will use browser as a interface/platform to make a request by using URL.
+
+How to see request and response?
+Inspect your browser,
+Go to the response tab.
+
+Some Importange Status Code :
+100 continue
+102 processing
+200 ok
+202 accepted
+204 no content
+205 reset content
+300 multiple choice
+302 found
+306 unused
+400 bad request
+402 payment request
+403 forbidden
+404 not found
+405 method not allowed 
+406 not acceptable
+408 request timeout
+423 locked
+425 too early
+429 too many requests
+500 internal server request
+503 service unavailable
+507 insufficient storage
+
+How many types of request are there?
+1). Synchronous Request
+2). Asynchronous Request
+
+1). Synchronous Request :
+A request in which one event depends on other request to happen such type of request is called synchronous request. These request are blocking in nature.
+Example :
+JS --> window.alert()
+PHP --> Form submission
+
+2). Asynchronous Request :
+A request in which one event doesn't depends on other request to happen such type of request is called asynchronous request. These request are non-blocking in nature.
+Example :
+1). Node.js --> window.alert()
+R1 --> Waiting
+R2 --> Processing --> Succeed
+R3 --> Waiting
+R4 --> Processing --> Succeed
+
+2). PHP
+R1 --> Waiting --> Succeed
+R2 --> Waiting --> Processing --> Succeed
+R3 --> Waiting --> Processing --> Succeed
+R4 --> Waiting --> Processing
+
+Getting started with Laragon :
+1). While opening laragon screen you will called as laragon control panel.
+
+Menu : All the inportants,
+Settings, logs, errors, initialization, configuration related to apache, MySQL, php, will be listed here.
+
+Important Files :
+.ini - initialisation file
+        It will contain all the important services, assets, resources, permissions, utilities required by any program during startup.
+Examples : 
+php.ini
+laragon.ini
+mysql.ini
+etc.
+
+.log - error file
+         It will contains all the run-time errors and exceptions occured during execution of the program.
+It stores the information with alert status.
+1). Success
+2). Info
+3). Warning
+4). Danger (Critical)
+
+.cnf or .conf - configuration file
+         It contains the configuration which are required during execution of the program at runtime execution.
+
+2). www : This menu will show all the projects you will create inside C:/laragon/www.
+
+1). Server Document Root : It contains the system path C:/laragon/www
+
+Document root of wamp : C:/wamp/www
+Document root of xampp : C:/xampp/htdocs
+
+2). Explore Menu : It is used to open the existing projects in explorer window.
+
+3). Share : It is used to share the resources with your team mates connected to network.
+
+4). Project Launcher : It will launch every project in URL.
+
+3). Quick App : In PHP, every project is know as an app.
+These app can be classified [community-name] App
+for example : 
+1). wordpress community
+     wordpress app
+2). laravel community
+    laravel app
+3). drupal community
+    drupal app
+4). codeIgnitor community
+     codeIgnitor App or CI App
+
+Using quick app we can automatically configure and install the application.
+Make sure you have internet connection.
+
+https://github.com/awnishmmg/Zwavexampp-list-plugin/blob/master/Xampp-Directory-Listing.zip?raw=true
+
+What is index.php file?
+index.php file is the by default file of apache which will be directly loaded in the url.
+
+Which server you are using?
+Apache Server
+
+Apache server is installed in which server?
+Laragon Server
+
+What is my current file name?
+p1.php
+
+Where this file is located?
+inside c:/laragon/www inside laragon server
+
+Where index.php file is located?
+inside c:/laragon/www
+		  | index.php
+
+From where you can access this index.php?
+From client
+
+How to we can make a request?
+URL (Uniform Resource Locator)
+URI (Uniform Resource Identifier)
+
+URL has following parts :
+URL is a kind of web address to some resource located at any server.
+URL can be two types :
+1). Protocol Based
+2). Non-Protocol Based (Uses IP Address)
+
+URL Syntax :
+[protocol-name]:<sub-domain>/<domain>/<host>:<port>/<resource-url>
+
+Difference b/w HTTP and HTTPS :
+
+		HTTP		HTTPS
+URL		http://		https://
+Security		Unsecure		Enhanced Security
+Port		PORT 80		PORT 443
+OSI Layer		Application Layer	Transport Layer
+TLS Certificate	No		Yes
+Domain Validation	Not required	Domain validation[+legal validation]
+Encryption	No		Yes
+
+TLS : Transport Layer Security
+OSI : Open System Interconnection
+
+What Is the OSI Model
+The Open Systems Interconnection (OSI) model describes seven layers that computer systems use to communicate over a network. It was the first standard model for network communications, adopted by all major computer and telecommunication companies in the early 1980s
+
+The modern Internet is not based on OSI, but on the simpler TCP/IP model. However, the OSI 7-layer model is still widely used, as it helps visualize and communicate how networks operate, and helps isolate and troubleshoot networking problems.
+
+OSI was introduced in 1983 by representatives of the major computer and telecom companies, and was adopted by ISO as an international standard in 1984.
+
+OSI Model Explained: The OSI 7 Layers
+7). Application Layer
+The application layer is used by end-user software such as web browsers and email clients. It provides protocols that allow software to send and receive information and present meaningful data to users. A few examples of application layer protocols are the Hypertext Transfer Protocol (HTTP), File Transfer Protocol (FTP), Post Office Protocol (POP), Simple Mail Transfer Protocol (SMTP), and Domain Name System (DNS).
+
+6). Presentation Layer
+The presentation layer prepares data for the application layer. It defines how two devices should encode, encrypt, and compress data so it is received correctly on the other end. The presentation layer takes any data transmitted by the application layer and prepares it for transmission over the session layer.
+
+5). Session Layer
+The session layer creates communication channels, called sessions, between devices. It is responsible for opening sessions, ensuring they remain open and functional while data is being transferred, and closing them when communication ends. The session layer can also set checkpoints during a data transfer—if the session is interrupted, devices can resume data transfer from the last checkpoint.
+
+4). Transport Layer
+The transport layer takes data transferred in the session layer and breaks it into “segments” on the transmitting end. It is responsible for reassembling the segments on the receiving end, turning it back into data that can be used by the session layer. The transport layer carries out flow control, sending data at a rate that matches the connection speed of the receiving device, and error control, checking if data was received incorrectly and if not, requesting it again.
+
+3). Network Layer
+The network layer has two main functions. One is breaking up segments into network packets, and reassembling the packets on the receiving end. The other is routing packets by discovering the best path across a physical network. The network layer uses network addresses (typically Internet Protocol addresses) to route packets to a destination node.
+
+2). Data Link Layer
+The data link layer establishes and terminates a connection between two physically-connected nodes on a network. It breaks up packets into frames and sends them from source to destination. This layer is composed of two parts—Logical Link Control (LLC), which identifies network protocols, performs error checking and synchronizes frames, and Media Access Control (MAC) which uses MAC addresses to connect devices and define permissions to transmit and receive data.
+
+1). Physical Layer
+The physical layer is responsible for the physical cable or wireless connection between network nodes. It defines the connector, the electrical cable or wireless technology connecting the devices, and is responsible for transmission of the raw data, which is simply a series of 0s and 1s, while taking care of bit rate control.
+
+URL Syntax :
+[protocol-name] : // <sub-domain>/<domain>/<host>:<port>/<resource-url>
+
+URI Segment : In any URL which parts are separated by '/' is called as URI segment.
+
+After port segment it's basically path to resource.
+
+After protocol segment and before endpoint is known as domain name.
+Every domain name may have a sub-domain or not but will have a port, and every domain will have an IP address too. Since anyone can't learn or remember IP address so we provide a alias name this alias name is called as domain name and this domain name has to be registered (mapped) with the IP and using DNS (Domain Name Server).
+
+Ques : Identify protocol, port, URI segment, domain host, domain name, sub domain, resource url, extension, mime type, IP address, loopback address, local address, foriegn address and resource.
+URL : http://dev.localhost/myproject/admin/p1.php
+
+Ans : 
+Protocol : http://
+Port : 80 (Unsecured)
+URI segment : dev.localhost/myproject/admin/p1.php
+Domain host : localhost
+Domain name : unavailable
+Sub domain : dev
+Resource URL : myproject/admin/p1.php
+Extension : .php
+MIME type : .php file
+IP address : 127.0.0.1
+Loopback address : 127.0.0.1
+Foreign address : [::1]
+Resource : p1.php
+Local address : DESKTOP-E0AP5IL:0
+
+Ques : What is MIME type?
+Ans : When a file present on any server then we call file extension as MIME type.
+
+Ques : How types of files exist in browser?
+Ans : Two (Renderable and Non-renderable).
+
+
+
+
+
+

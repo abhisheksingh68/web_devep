@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>array</title>
+</head>
+<body>
+<script>
+        // forEach functions
+        const arr=[1,2,3,4,5,6,7,8,9];
+        arr.forEach(af=>{
+            //document.write(af);
+            console.log(af);
+        });
+
+
+        const lett=['a','b','a','c','d','e'];
+        let count = {};
+        lett.forEach(item=>{
+            if(count[item]){
+                count[item]++;
+
+            }else{
+                count[item]=1 ;
+            }
+        });
+        console.log(count);
+
+
+
+
+// print no in map  function and multiple
+
+
+
+const num=[1,2,3,4,5,6,7,8,9,10];
+const numD =num.map(double);
+function double(value,index,arr){
+    return value*2;
+}
+document.write(numD);
+//  console.log(numD);
+
+document.write("</br>");
+document.write("</br>");
+
+//  multiples of his index no
+
+
+const numM=[1,2,3,4,5,6,7,8,9,10];
+const num1 = numM.map(multy);
+function multy(value ,index ,arr){
+    return value*index;
+}
+document.write(num1);
+
+document.write("</br>");
+document.write("</br>");
+
+// value of product item and its totals 
+
+
+const  product=[
+    {
+        name: 'leptop',
+        price:20000,
+        count:3
+    },
+    {
+        name: 'desktop',
+        price:10000,
+        count:5
+    },
+    {
+        name: 'phone',
+        price:7000,
+        count:5
+    },
+];
+const totP = product.map(item=>item.price*item.count);
+
+document.write( totP);
+
+document.write('<br>');
+
+const  products=[
+    {
+        name: 'leptop',
+        price:20000,
+        count:3
+    },
+    {
+        name: 'desktop',
+        price:10000,
+        count:5
+    },
+    {
+        name: 'phone',
+        price:7000,
+        count:5
+    },
+];
+const totalproductsvalue = products.map(item=>({name: item.name,
+    totalvalue:item.price*item.count
+}));
+console.log(totalproductsvalue);
+
+
+ const str=['1','2','3','4','5'];
+ const number=str.map(Number);
+ console.log(number);
+
+
+
+</script>
+    
+</body>
+</html>

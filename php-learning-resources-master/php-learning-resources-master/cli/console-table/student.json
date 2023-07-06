@@ -1,0 +1,23 @@
+{
+"collection" : "student",
+"author" : "Deeproshan",
+"date" : "27 Jan 2022",
+"time" : "11:00:00",
+"data" : [
+{
+"roll" : 1001,
+"name" : "Deep",
+"marks" : 70
+},
+{
+"roll" : 1002,
+"name" : "Roshan",
+"marks" : 75
+},
+{
+"roll" : 1003,
+"name" : "Sandeep",
+"marks" : 80
+}
+]
+}

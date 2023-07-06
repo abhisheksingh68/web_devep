@@ -1,0 +1,92 @@
+BASIC CONCEPT OF PROGRAMMING :
+
+How to create folder dynamically via date using cmd?
+Concept 1 : A folder name can't contain, illegal character like \, /, :, *, "", ?, |, <>
+
+If while running the command, mkdir %date% if you get an error, incorrect syntax error.
+Make sure you date format does not contain illegal character \, /, ?, *, "", |, :, <>.\
+
+Basic Story :
+PHP is a our technology, and php is a server side language.
+
+Why php is not executed on browser?
+https://www.facebook.com/
+file:///c:/Users/Abhay%20Singh/Desktop/App-2021/PHP/home.html
+
+1). According to client server model,
+2). Anything which is loaded by client (browser) will be called as resourse.
+
+https://www.facebook.com/profile-picture.png (Resource)
+
+Common terms used in Web Technology :
+1). Human (End User)
+2). God (Server)
+3). Prayer (Request)
+4). Blessings (Response)
+
+How end user makes a request?
+Ans : URL (Uniform Resource Locater)
+
+End-user will use browser as a interface/platform to make a request by using URL.
+
+How to see request and response?
+Inspect your browser,
+Go to the response tab.
+
+Some Importange Status Code :
+100 continue
+102 processing
+200 ok
+202 accepted
+204 no content
+205 reset content
+300 multiple choice
+302 found
+306 unused
+400 bad request
+402 payment request
+403 forbidden
+404 not found
+405 method not allowed 
+406 not acceptable
+408 request timeout
+423 locked
+425 too early
+429 too many requests
+500 internal server request
+503 service unavailable
+507 insufficient storage
+
+How many types of request are there?
+1). Synchronous Request
+2). Asynchronous Request
+
+1). Synchronous Request :
+A request in which one event depends on other request to happen such type of request is called synchronous request. These request are blocking in nature.
+Example :
+JS --> window.alert()
+PHP --> Form submission
+
+2). Asynchronous Request :
+A request in which one event doesn't depends on other request to happen such type of request is called asynchronous request. These request are non-blocking in nature.
+Example :
+1). Node.js --> window.alert()
+R1 --> Waiting
+R2 --> Processing --> Succeed
+R3 --> Waiting
+R4 --> Processing --> Succeed
+
+2). PHP
+R1 --> Waiting --> Succeed
+R2 --> Waiting --> Processing --> Succeed
+R3 --> Waiting --> Processing --> Succeed
+R4 --> Waiting --> Processing
+
+
+
+
+
+
+
+
+

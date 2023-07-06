@@ -1,0 +1,28 @@
+<script>
+var arr =[
+["ram",18,"male","b.com",'india'],
+["abhi",23,"male","b.com",'india'],
+["reena",17,"female","b.tech",'aus'],
+["ravi",20,"male","bsc",'us'],
+["sim",21,"female","b.com",'india']
+];
+
+document.write(arr[0][0] +"</br>" ); // 0 index ki values in 0 place ki value
+document.write(arr[0]+"</br>" );   // 0 index ki sari value
+document.write(arr[1]+"</br>" );
+document.write(arr[2]+"</br>" );
+document.write(arr[3]+"</br>" );
+document.write(arr[4]+"</br>" );
+
+document.write("</br>" );
+
+ // print array value in for loop
+for(var a=0; a<=4; a++){
+    for(var b=0 ; b<=4; b++){
+        document.write(arr[a][b] + " ");  
+    }
+    document.write("<br>");
+   // document.write(arr[a] + "<br>");
+}
+
+</script>

@@ -1,0 +1,12 @@
+In order to perform autoloading using composer you need autoload.php file which is given by composerafter generating
+vendor folder.
+
+For updating autoloader we run command :
+
+✔ composer dump autoload
+
+For this you need to package using composer.json
+
+How to create composer.json file?
+
+✔ composer init

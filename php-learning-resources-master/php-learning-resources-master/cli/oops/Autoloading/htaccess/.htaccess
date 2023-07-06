@@ -1,0 +1,14 @@
+RewriteEngine On
+Options -Indexes
+DirectoryIndex about.php
+RewriteRule ^(home.aspx)$ home.php
+ErrorDocument 404 https://colorlib.com/cdn-cgi/image/quality=80,format=auto,onerror=redirect,metadata=none/wp/wp-content/uploads/sites/2/404-error-page-templates.jpg
+IndexIgnore public_html
+
+php_value auto_prepend_file header.php
+php_value auto_append_file footer.php
+
+setEnv DB_HOST localhost:3308
+setEnv DB_USER root
+setEnv DB_PASSWORD 
+setEnv DB_NAME app2021

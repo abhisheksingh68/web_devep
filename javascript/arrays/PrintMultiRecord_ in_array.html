@@ -1,0 +1,23 @@
+<script>
+    var arr =[
+    ["ram",18,"male","b.com",'india',18000],
+    ["abhi",23,"male","b.com",'india'],
+    ["reena",17,"female","b.tech",'aus'],
+    ["ravi",20,"male","bsc",'us',20000],
+    ["sim",21,"female","b.com",'india'],
+    ["radha",18,"female","ba",'india']
+    ];
+    
+    document.write(" <table border='1px' cellspacing='0'> " );
+    
+     // print array value in for loop
+    for(var a=0; a < arr.length; a++){
+        document.write("<tr>");
+        for(var b=0 ; b<arr[a].length; b++){
+            document.write("<td>"+arr[a][b] + "</td> ");  
+        }
+        document.write("</tr>");
+       // document.write(arr[a] + "<br>");
+    }
+    document.write(" </table>" );
+    </script>

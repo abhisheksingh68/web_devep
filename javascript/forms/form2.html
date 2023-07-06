@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Form 2</title>
+</head>
+
+<body>
+    <h2>Registration form2</h2>
+    <form name="myform" method="post" onsubmit="return vaildform()">
+        <fieldset style="height: 400px; width:400px;">
+            <legend>User personal information</legend>
+            <label >Enter your full name</label><br>
+            <input type="text" name="name"><br>
+            <label id="mail">Enter your email</label><br>
+            <input type="email" name="email"><br>
+            <label>Enter your password</label><br>
+            <input type="password" name="password"><br>
+            <label>confirm your password</label><br>
+            <input type="password" name="cpass"><br>
+            <br><label>Enter your gender</label><br>
+            <input type="radio" id="gender" name="gender" value="male" />Male <br>
+            <input type="radio" id="gender" name="gender" value="female" />Female <br />
+            <input type="radio" id="gender" name="gender" value="others" />others <br />
+            <br>Enter your Address:<br>
+            <textarea></textarea><br>
+            <input type="submit" value="submit">
+        </fieldset>
+    </form>
+
+    <script type="text/javascript">
+        function vaildform() {
+            var name = document.myform.name.value;
+            var password = document.myform.password.value;
+            var cpass = document.myform.cpass.value;
+            var email = document.myform.email.value;
+            if (name == null || name == "") {
+                alert("please Enter your name");
+                return false;
+            }else if (email.length ) {
+                alert("Please enter your email ");
+                return false;
+            } else if (password.length < 6) {
+                alert("password must be at least of 6 characters long");
+                return false;
+            }else if (password==cpass) {
+               
+                return true;
+        }else {
+            alert("password doesnot match ");
+            return false;
+        } 
+    }
+
+    </script>
+</body>
+
+</html>

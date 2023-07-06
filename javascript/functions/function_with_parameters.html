@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>function with parameter</title>
+</head>
+<body>
+    <script>
+        function hello(fname,lname){
+            document.write(fname+lname);
+        }
+        hello("amit" +" " ,"kumar");
+  
+        document.write("</br>");
+        document.write("</br>");
+        function hello(fname,lname){
+            document.write("hello"+ ":- " +fname+lname);
+        }
+        hello("amit" +" " ,"kumar");
+
+        document.write("</br>");
+        document.write("</br>");
+
+        //  using defult name 
+        function hello(fname="ravi",lname="yadav"){
+            document.write("hello"+ ":- " +fname+lname);
+        }
+        hello();
+        
+        document.write("</br>");
+        document.write("</br>");
+
+         //  using defult name change after given parameter
+         
+         function hello(fname="ravi",lname="yadav"){
+            document.write("hello"+ ":- " +fname+lname);
+        }
+        hello( "mr.","abhi" );
+        
+    </script>
+    
+</body>
+</html>

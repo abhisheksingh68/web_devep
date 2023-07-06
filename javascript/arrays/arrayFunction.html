@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Array function</title>
+</head>
+<body>
+    <script>
+var a = ["sumit","ravi","abhi","sim","vandana","amit"];
+
+a.sort();
+document.write(a);  //array in   accending order
+document.write("</br>");
+document.write("</br>");
+
+a.reverse();
+document.write(a);  //array in   descending order
+document.write("</br>");
+document.write("</br>");
+
+
+a.pop();        // delete last value of array
+document.write(a);
+document.write("</br>");
+document.write("</br>");
+
+a.push( " ram","radha");        // add the value last  in array
+document.write(a);
+document.write("</br>");
+document.write("</br>");
+
+a.shift();        // array ki starting value delete kar deta hai
+document.write(a);
+document.write("</br>");
+document.write("</br>");
+
+a.unshift( "ramesh");        //  array ki starting me value add kar ta hai
+document.write(a);
+document.write("</br>");
+document.write("</br>");
+
+
+var c = a.concat("abhi","kisan","aradhya");  // do array ko jod deta hai
+document.write(c);
+document.write("</br>");
+document.write("</br>");
+
+//second method of concat 
+var b=["abc","mohan","raj","madan","asha"];
+var d= c.concat(a,b);
+
+
+
+
+
+    </script>
+    
+</body>
+</html>
