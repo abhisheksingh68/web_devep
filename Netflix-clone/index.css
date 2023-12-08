@@ -1,0 +1,55 @@
+/* Normalise css */
+hhtml,body{
+  background-color: black;
+  margin: 0;
+  padding: 0;
+  font-family: Helvetica, Arial,  sans-serif;
+}
+.container{
+  width: 100%;
+  max-width: 1242px;
+  margin:0 auto;
+}
+
+/* header Css*/
+header{
+  /* background-color: gray; */
+
+}
+.header-cont{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.left-cont , .right-cont{
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+.header-brand{
+max-width: 110px;
+}
+
+.main-nav{
+  list-style:none ;
+  display: inline-flex;
+  flex-direction: row;
+}
+.nav-item{
+   margin: 20px; 
+   color: #e5e5e5;
+}
+/* .right-cont{
+  margin-right: 22px;
+} */
+
+.right-cont,.nv i{
+  display: inline-flex;
+  flex-direction: row;
+  margin-right: 20px;
+  color: white;
+  /* max-width: 36px; */
+  /* padding: 10px; */
+  /* margin: 5px; */
+}
